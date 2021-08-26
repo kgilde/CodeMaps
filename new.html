@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Display:wght@600&family=Spartan&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <title>CodeMaps</title>
+</head>
+<body id="top">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <a class="navbar-brand" href="#">CodeMaps</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#top">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#Languages">Languages</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#framework">Frameworks</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="page2.html">Cloud <span class="sr-only">(current)</span></a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input id="statesearch" class="form-control mr-sm-2" type="search" placeholder="Find State.." aria-label="Search">
+                <button class="btn btn-light my-2 my-sm-0" id="searchbutton"type="submit" onclick="formdata()">Search</button>
+              </form>
+            </div>
+          </nav>
+    </header>
+    
+    <main>
+      
+      <div class="jumbotron">
+          <h1>CodeMaps</h1>
+          <h2>What programming language or framework should you learn?</h2>
+          <br>
+          <h5 id="Languages">Check out our interactive maps below for the most popular languages in your area!</h5>
+      </div>
+
+      <div class="container-1">
+        <div class="map">
+          <h2>Jobs Available for Programming Languages by State:</h2>
+          <iframe src="https://createaclickablemap.com/map.php?&id=103850&maplocation=false&online=true" width="900" height="525" style="border: none;"></iframe>
+          <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+            <div class="key">
+              <b style="color:#EBEB38; vertical-align:text-top;">⬤</b> Python
+              <b style="color:#F02929; vertical-align:text-top;">⬤</b> Javascript
+              <b style="color:#2977FF; vertical-align:text-top;">⬤</b> Java
+              <b style="color:#BE2BE3; vertical-align:text-top;">⬤</b> C#
+            </div>
+        </div>
+      </div>
+
+      <div class="container-2">
+        <h2>Top Programming Languages/Framework By Individual State:</h2>
+        <div id = "alabama-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/alabama.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">ALABAMA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C++</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                </ul>
+                <a href="https://www.linkedin.com/jobs/search?keywords=Python&location=Alabama%2C%20United%20States&geoId=102240587&trk=public_jobs_jobs-search-bar_search-submit&position=1&pageNum=0" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/alaska.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">ALASKA</h4>
+                <ul class="card-text">
+                  <li>C#</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>Java</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/arizona.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">ARIZONA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/arkansas.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">ARKANSAS</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/california.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">CALIFORNIA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="colorado-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/colorado.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">COLORADO</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/connecticut.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">CONNECTICUT</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C+</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/delaware.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">DELAWARE</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/florida.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">FLORIDA</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/georgia.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">GEORGIA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id = "hawaii-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/hawaii.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">HAWAII</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/idaho.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">IDAHO</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/illinois.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">ILLINOIS</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/indiana.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">INDIANA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/iowa.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">IOWA</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id = "kansas-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/kansas.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">KANSAS</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/kentucky.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">KENTUCKY</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/louisiana.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">LOUISIANA</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/maine.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MAINE</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/maryland.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MARYLAND</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="massachusetts-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/massachusetts.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MASSACHUSETTS</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/michigan.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MICHIGAN</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/minnesota.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MINNESOTA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/mississippi.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MISSISSIPPI</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/missouri.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MISSOURI</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id = "montana-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/montana.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">MONTANA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/nebraska.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NEBRASKA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C+</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/nevada.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NEVADA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-hampshire.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id ="FLORIDA" class="card-title">NEW HAMPSHIRE</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-jersey.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NEW JERSEY</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id ="newmexico-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-mexico.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NEW MEXICO</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/new-york.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NEW YORK</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C+</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/north-carolina.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NORTH CAROLINA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/north-dakota.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">NORTH DAKOTA</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/ohio.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">OHIO</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="oklahoma-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/oklahoma.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">OKLAHOMA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/oregon.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">OREGON</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C+</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/pennsylvania.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">PENNSYLVANIA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/rhode-island.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id ="FLORIDA" class="card-title">RHODE ISLAND</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/south-carolina.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">SOUTH CAROLINA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="southdakota-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/south-dakota.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">SOUTH DAKOTA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/tennessee.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">TENNESSEE</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C+</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/texas.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">TEXAS</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/maine.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id ="FLORIDA" class="card-title">UTAH</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/vermont.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">VERMONT</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="virginia-window" class="row">
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/virginia.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">VIRGINIA</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/washington.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">WASHINGTON</h4>
+                <ul class="card-text">
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C+</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/west-virginia.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">WEST VIRGINIA</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/wisconsin.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id ="FLORIDA" class="card-title">WISCONSIN</h4>
+                <ul class="card-text">
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>Java</li>
+                  <li>C#</li>
+                  <li>C++</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img class="card-img-top" src="https://cdn.civil.services/us-states/backgrounds/1280x720/landscape/wyoming.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 class="card-title">WYOMING</h4>
+                <ul class="card-text">
+                  <li>Java</li>
+                  <li>Python</li>
+                  <li>Javascript</li>
+                  <li>C++</li>
+                  <li>C#</li>
+                </ul>
+                <a href="#" class="btn btn-primary">Jobs</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-3">
+        <div class="map" id="framework">
+          <h2 id="Languages">Jobs Available for React/Angular by State:</h2>
+          <iframe src="https://createaclickablemap.com/map.php?&id=103888&maplocation=false&online=true" width="900" height="525" style="border: none;"></iframe>
+          <script>if (window.addEventListener){ window.addEventListener("message", function(event) { if(event.data.length >= 22) { if( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } else if (window.attachEvent){ window.attachEvent("message", function(event) { if( event.data.length >= 22) { if ( event.data.substr(0, 22) == "__MM-LOCATION.REDIRECT") location = event.data.substr(22); } }, false); } </script>
+            <div class="key">
+              <b style="color:#4632FA; vertical-align:text-top;">⬤</b> React
+              <b style="color:#F02929; vertical-align:text-top;">⬤</b> Angular
+              <b style="color:#1E9E19; vertical-align:text-top;">⬤</b> Mix
+            </div>
+            <br>
+            <p>"Mix" means React is still dominant, but the results are much closer</p>
+        </div>
+      </div>
+    </main>
+    <footer class="footer mt-auto py-3 custom">
+      <div class="container-fluid text-center">
+          <span class="text-muted">CodeMaps LLC</span>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
